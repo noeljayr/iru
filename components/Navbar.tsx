@@ -11,7 +11,11 @@ function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
   return (
     <>
-      <div className={`navbar ${menuActive? "hide-nav": ""} top-0 fixed w-screen gap-4 left-0 flex justify-between max-sm:justify-normal items-center px-12 max-sm:px-4 pt-4 pb-2`}>
+      <div
+        className={`navbar ${
+          menuActive ? "hide-nav" : ""
+        } top-0 w-screen gap-4 left-0 flex justify-between max-sm:justify-normal items-center px-12 max-sm:px-4 pt-4 pb-2`}
+      >
         <Link href="/" className="flex gap-2 logo items-center mr-auto">
           <Image src={logo} alt="Immediate Response Unit Logo" />
           IRU
@@ -57,6 +61,9 @@ function Navbar() {
       </div>
 
       <div
+        onClick={() => {
+          setMenuActive(!menuActive);
+        }}
         className={`menu-overlay fixed ${
           menuActive ? "flex" : "hidden"
         } w-screen h-screen`}

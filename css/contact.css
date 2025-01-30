@@ -3,6 +3,12 @@
   padding-right: 3rem;
 }
 
+@media not all and (min-width: 640px) {
+  .contact{
+    margin-top: 3rem;
+  }
+}
+
 .contact .pr {
   width: 65ch;
 }

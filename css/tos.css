@@ -1,6 +1,11 @@
 .tos {
   width: 50%;
 }
+@media not all and (min-width: 640px) {
+  .tos{
+    margin-top: 3rem;
+  }
+}
 
 @media not all and (min-width: 900px) {
   .tos {
