@@ -33,7 +33,7 @@ function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           href="https://wa.link/3r51je"
-          className="cta"
+          className="cta max-sm:hidden"
         >
           Get Started <IconChevronRight />
         </Link>
@@ -58,6 +58,14 @@ function Navbar() {
         <Link href="/#pricing">Pricing</Link>
         <Link href="/contact">Contact</Link>
         {/* <Link href="#">About</Link> */}
+        <Link
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.link/3r51je"
+          className="cta"
+        >
+          Get Started <IconChevronRight />
+        </Link>
       </div>
 
       <div
