@@ -1,0 +1,48 @@
+.tos {
+  width: 50%;
+}
+
+@media not all and (min-width: 900px) {
+  .tos {
+    width: calc(100% - 6rem);
+  }
+}
+
+.tos .pr {
+  width: 45ch;
+}
+
+@media not all and (min-width: 640px) {
+  .tos {
+    width: calc(100% - 2rem);
+  }
+  .tos .pr {
+    width: 100%;
+  }
+}
+
+.tos ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+}
+
+.updated-on {
+  font-size: 0.65rem;
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid rgba(0, 0, 128, 0.05);
+  font-weight: bold;
+  color: var(--primary);
+  width: fit-content;
+}
+
+.tos .term {
+  background-color: #fafafc;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
